@@ -68,7 +68,7 @@ public class GateClient {
         annotationPipeline.add(posTagger);
         annotationPipeline.add(keywordExtraction);
 
-        BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Petr\\Praha\\Magistr\\2.semestr\\DDW\\homework1\\filename.txt"));
+        /*BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Petr\\Praha\\Magistr\\2.semestr\\DDW\\homework1\\filename.txt"));
 
         StringBuilder sb = new StringBuilder();
         String line = br.readLine();
@@ -78,8 +78,8 @@ public class GateClient {
             sb.append(System.lineSeparator());
             line = br.readLine();
         }
-        String everything = sb.toString();
-        Document document = Factory.newDocument(everything);
+        String everything = sb.toString();*/
+        Document document = Factory.newDocument(text);
 
         Corpus corpus = Factory.newCorpus("");
         corpus.add(document);
